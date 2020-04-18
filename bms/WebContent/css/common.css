@@ -1,0 +1,25 @@
+/*公共样式表*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li{
+    list-style: none;
+}
+.clear{
+    float: none;
+}
+.left{
+    float:left;
+}
+.right{
+    float: right;
+}
+.hide{
+    display: none;
+}

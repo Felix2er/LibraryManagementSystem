@@ -1,0 +1,126 @@
+/*侧边栏*/
+.aside{
+    width: 280px;
+    height: 100%;
+    color: white;
+    background: dimgray;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: 30px 0 0 10px;
+}
+.user{
+    float: left;
+    margin: -70px 0 0 120px;
+}
+.nav{
+    width: 280px;
+    margin-top: 30px;
+}
+.nav1 li{
+    width: 280px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+.nav1 li:hover{
+    background: gray;
+}
+.nav1 li a{
+    text-decoration: none;
+    color: white;
+}
+
+/*内容*/
+.content{
+    width: 1256px;
+    height: 720px;
+    margin: -722px 0 0 280px;
+    /* border: 1px solid black; */
+}
+.librarylogo01{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: -125px 0 0 465px;
+}
+.title{
+    width: 100%;
+    height: 60px;
+    line-height: 62px;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 1.5px solid gray;
+}
+.main{
+    width: 1236px;
+    height: 646px;
+    /* border: 1px solid black; */
+    margin-top: -8px;
+}
+.page{
+    width: 1236px;
+    height: 646px;
+    border: 1px solid white;
+}
+/*分页一：首页*/
+.librarylogo02{
+    width: 180px;
+    height: 180px;
+    margin: 170px 0 0 20px;
+}
+/*分页二：基本信息*/
+.input{
+    width: 250px;
+    height: 30px;
+    margin-top:10px;
+}
+.input:hover{
+    border: 1px solid lightseagreen;
+    box-shadow: 0 0 2px lightseagreen;
+}
+.btn1{
+    width: 80px;
+    height: 35px;
+    border-radius: 8px;
+    background: lightseagreen;
+}
+/*分页三：我的书架*/
+#content{
+    width: 1235px;
+    height: 600px;
+}
+/*分页四：书库*/
+
+
+/*分页五：馆内论坛*/
+.chatbox{
+    width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.input-main{
+    width: 580px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border: 1px solid black;
+}
+.btn2{
+    width: 50px;
+    height: 24px;
+    margin-left: 541px;
+    color: white;
+    background: gray;
+}
+.message{
+    width: 580px;
+    height: 520px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border: 1px solid black;
+}

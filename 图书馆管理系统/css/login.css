@@ -1,0 +1,49 @@
+.logo{
+    width: 790px; 
+    float: left;
+    margin: 180px 120px; 
+}
+.librarylogo{
+    width: 160px; 
+    height: 160px;
+    margin: 0px 0 0 230px;
+}
+.titl{
+    font-size: 90px; 
+    margin-top: 14px;
+}
+.selectcard{
+    width: 290px; 
+    height: 330px; 
+    background: white; 
+    float: right;
+    margin: 200px 200px 0 0;
+}
+.layui-tab-title li{
+    width: 115px;
+    font-size: 20px;
+}
+.input{
+    width: 230px;
+    height: 28px;
+    font-size: 16px;
+    margin-top: 4px;
+}
+.input:hover{
+    border: 1px solid lightskyblue;
+}
+.input1{
+    width: 200px;
+    height: 28px;
+    font-size: 16px;
+    margin-top: 4px;
+}
+.input1:hover{
+    border: 1px solid lightskyblue;
+}
+.pos1{
+    margin: 0px 105px;
+}
+.pos2{
+    margin: 3px 105px;
+}

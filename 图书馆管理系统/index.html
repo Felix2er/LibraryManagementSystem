@@ -1,0 +1,236 @@
+<html>
+    <head>
+        <title>图书馆管理系统-主页</title>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="./css/common.css">
+        <link type="text/css" rel="stylesheet" href="./css/index.css">
+        <link type="text/css" rel="stylesheet" href="./css/layui.css">
+    </head>
+    <body>
+        <div>
+          <!-- 左侧边框 -->
+          <div class="aside">
+            <img src="./images/userlogo.png" alt="用户头像" class="logo">
+            <table class="user">
+              <tr>
+                <th>用&nbsp;&nbsp;户&nbsp;&nbsp;名：</th>
+                <td>游客</td>
+              </tr>
+              <tr>
+                 <th>登录时长：</th>
+                 <td>00:00:00</td>
+               </tr>
+            </table>
+            <div class="nav">
+              <ul class="nav1">
+                <li id="firstpage" style="background:gray;" onclick="changeone()">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</li>
+                <li id="baseinfo" onclick="changetwo()">基&nbsp;&nbsp;本&nbsp;&nbsp;信&nbsp;&nbsp;息</li>
+                <li id="books" onclick="changethree()">我&nbsp;&nbsp;的&nbsp;&nbsp;书&nbsp;&nbsp;架</li>
+                <li id="bookbox" onclick="changefour()">书&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;库</li>
+                <li id="chat" onclick="changefive()">馆&nbsp;&nbsp;内&nbsp;&nbsp;论&nbsp;&nbsp;坛</li>
+                <li id="quit"><a href="./login.html" target="_self">退&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;出</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 右侧边框 -->
+          <div class="content">
+            <img src="./images/library_logo.jpg" alt="图书馆logo" class="librarylogo01">
+            <h3 class="title">图书馆管理系统</h3>
+            <div name="main" class="main">
+              <!-- 分页一：首页 -->
+                <div id="pageone" class="page">
+                  <img src="./images/library_logo.jpg" alt="图书馆logo" class="librarylogo02">
+                  <span style="margin: 20px 0 0 450px; font-size: 50px; float: left;">欢迎登录本系统</span>
+                </div>
+              <!-- 分页二：基本信息 -->
+              <div id="pagetwo" class="page hide">
+                <form action="" method="post" style="margin: 160px 500px;">
+                  <table>
+                    <label>用户名</label><br>
+                    <input type="text" name="username" id="username-" class="input" readonly><br><br>
+                    <label>性别</label><br>
+                    <input type="text" name="sex" id="sex-" class="input" readonly><br><br>
+                    <label>邮箱</label><br>
+                    <input type="text" name="email" id="email-" class="input" readonly>
+                  </table>
+                </form>
+                <div style="margin: -136px 499px;">
+                  <button class="btn1" onclick="revise()">修改</button>
+                  <button type="submit" class="btn1" onclick="save()" style="margin-left: 20px;">保存</button>
+                </div>
+              </div>
+              <!-- 分页三：我的书架 -->
+              <div id="pagethree" class="page hide">
+                <div class="layui-form" style="margin-top: 4px;">
+                  <table class="layui-table" style="margin-left: 9px;">
+                    <colgroup>
+                      <col width="90">
+                      <col width="180">
+                      <col width="150">
+                      <col width="200">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th style="text-align: center;">书籍编号</th>
+                        <th style="text-align: center;">书籍名称</th>
+                        <th style="text-align: center;">借书时间</th>
+                        <th style="text-align: center;">操&nbsp;&nbsp;&nbsp;&nbsp;作</th>
+                      </tr> 
+                    </thead>
+                    <tbody id="bookinfo">
+                        
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- 分页四：书库 -->
+              <div id="pagefour" class="page hide">
+                <div class="layui-tab">
+                  <ul class="layui-tab-title">
+                    <li class="layui-this">编程</li>
+                    <li>产品运营</li>
+                    <li>口才提升</li>
+                    <li>建筑设计</li>
+                    <li>历史著作</li>
+                  </ul>
+                  <div class="layui-tab-content">
+                    <div class="layui-tab-item layui-show">
+                      <div class="layui-form">
+                        <table class="layui-table" style="margin-left: 9px;">
+                          <colgroup>
+                            <col width="90">
+                            <col width="180">
+                            <col width="150">
+                            <col width="200">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th style="text-align: center;">书籍编号</th>
+                              <th style="text-align: center;">书籍名称</th>
+                              <th style="text-align: center;">剩余数量</th>
+                              <th style="text-align: center;">操&nbsp;&nbsp;&nbsp;&nbsp;作</th>
+                            </tr> 
+                          </thead>
+                          <tbody id="bookinfo1">
+                              
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <div class="layui-tab-item">
+                      <div class="layui-form">
+                        <table class="layui-table" style="margin-left: 9px;">
+                          <colgroup>
+                            <col width="90">
+                            <col width="180">
+                            <col width="150">
+                            <col width="200">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th style="text-align: center;">书籍编号</th>
+                              <th style="text-align: center;">书籍名称</th>
+                              <th style="text-align: center;">剩余数量</th>
+                              <th style="text-align: center;">操&nbsp;&nbsp;&nbsp;&nbsp;作</th>
+                            </tr> 
+                          </thead>
+                          <tbody id="bookinfo2">
+                              
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <div class="layui-tab-item">
+                      <div class="layui-form">
+                        <table class="layui-table" style="margin-left: 9px;">
+                          <colgroup>
+                            <col width="90">
+                            <col width="180">
+                            <col width="150">
+                            <col width="200">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th style="text-align: center;">书籍编号</th>
+                              <th style="text-align: center;">书籍名称</th>
+                              <th style="text-align: center;">剩余数量</th>
+                              <th style="text-align: center;">操&nbsp;&nbsp;&nbsp;&nbsp;作</th>
+                            </tr> 
+                          </thead>
+                          <tbody id="bookinfo3">
+                              
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <div class="layui-tab-item">
+                      <div class="layui-form">
+                        <table class="layui-table" style="margin-left: 9px;">
+                          <colgroup>
+                            <col width="90">
+                            <col width="180">
+                            <col width="150">
+                            <col width="200">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th style="text-align: center;">书籍编号</th>
+                              <th style="text-align: center;">书籍名称</th>
+                              <th style="text-align: center;">剩余数量</th>
+                              <th style="text-align: center;">操&nbsp;&nbsp;&nbsp;&nbsp;作</th>
+                            </tr> 
+                          </thead>
+                          <tbody id="bookinfo4">
+                              
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                      
+                    <div class="layui-tab-item">
+                      <div class="layui-form">
+                        <table class="layui-table" style="margin-left: 9px;">
+                          <colgroup>
+                            <col width="90">
+                            <col width="180">
+                            <col width="150">
+                            <col width="200">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th style="text-align: center;">书籍编号</th>
+                              <th style="text-align: center;">书籍名称</th>
+                              <th style="text-align: center;">剩余数量</th>
+                              <th style="text-align: center;">操&nbsp;&nbsp;&nbsp;&nbsp;作</th>
+                            </tr> 
+                          </thead>
+                          <tbody id="bookinfo5">
+                              
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 分页五：馆内论坛 -->
+              <div id="pagefive" class="page hide">
+                <div class="chatbox">
+                  <div class="input-main"></div>
+                  <button type="button" class="btn2" onclick="">发送</button>
+                  <div class="message"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>   
+        <script type="text/javascript" src="./js/jquery-3.4.1.min.js" defer></script>
+        <script type="text/javascript" src="./js/layui.all.js" defer></script>
+        <script type="text/javascript" src="./js/index.js" defer></script>
+    </body>
+</html>
